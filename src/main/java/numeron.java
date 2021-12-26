@@ -6,7 +6,7 @@ public class numeron {
         Scanner in = new Scanner(System.in);
         /*
         Step1:  Generate random 4 digit number: combination of 2 numbers in range of 0-4 and 2 numbers in range of 5-9
-                This will be the number identifed by player
+                This will be the number identified by player
         Step2:  Repeat Step 3and4 until player gets 4 eats
         Step3:  Prompt player to enter 4 digit numbers
         Step4:  Output Eat/Bite. Eat - correct index & correct number. Bite - correct number but wrong index
@@ -54,10 +54,9 @@ public class numeron {
         //Step3
 
         int eatsCount = 0;
-        int bitesCount = 0;
         while (eatsCount != 4) {
             eatsCount = 0;
-            bitesCount = 0;
+            int bitesCount = 0;
             System.out.println("Enter 4 digit number: ");
             String entry = in.next();
             String[] testArr = entry.split("");
